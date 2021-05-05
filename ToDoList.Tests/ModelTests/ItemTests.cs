@@ -8,14 +8,19 @@ namespace ToDoList.Tests
   public class ItemTests : IDisposable
   {
 
-      [TestMethod]
+    public void Dispose()
+    {
+      Item.ClearAll();
+    }
+
+    [TestMethod]
     public void ItemConstructor_CreatesInstanceOfItem_Item()
     {
       Item newItem = new Item("test"); //We pass in "test" as an argument here.
       Assert.AreEqual(typeof(Item), newItem.GetType());
     }
 
-        [TestMethod]
+    [TestMethod]
     public void GetDescription_ReturnsDescription_String()
     {
       //Arrange
@@ -27,7 +32,7 @@ namespace ToDoList.Tests
       Assert.AreEqual(description, result);
     }
 
-        [TestMethod]
+    [TestMethod]
     public void SetDescription_SetDescription_String()
     {
       //Arrange

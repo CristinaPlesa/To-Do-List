@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\c-triangle-tracker-lesson\c-triangle-tracker-lesson.csproj" />  
+    <ProjectReference Include="..\ToDoList\ToDoList.csproj" />  
   </ItemGroup>
 
 </Project>
